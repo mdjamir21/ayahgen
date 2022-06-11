@@ -80,7 +80,7 @@ ayahText.textContent =
     ":" +
     apiQuote["data"][0]["numberInSurah"];
     url.searchParams.append("v",verse)
-  window.location.href = url;
+  window.history.replaceState(null,null,`?v${verse}`);
   complete();
 
  
