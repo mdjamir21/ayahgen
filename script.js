@@ -11,6 +11,8 @@ let apiQuote = [];
 
 let url = new URL("https://ayahgen-lyart.vercel.app/");
 
+console.log(url)
+
 
 
 //show new quote
@@ -81,6 +83,10 @@ ayahText.textContent =
     apiQuote["data"][0]["numberInSurah"];
     url.searchParams.append("v",verse)
   window.history.replaceState(null,null,`?v${verse}`);
+  console.log(url);
+
+  link = url.href;
+  console.log(link)
   complete();
 
  
@@ -88,7 +94,7 @@ ayahText.textContent =
 
 
 function telegram() {
-  const teleurl = `https://t.me/share/url?url=${"google.com"}&text=${"message"}`;
+  const teleurl = `https://t.me/share/url?url=${link}&text=${"Take a minuite to read this :)"}`;
   window.open(teleurl, "_blank");
 }
 
