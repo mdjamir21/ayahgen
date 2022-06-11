@@ -89,9 +89,9 @@ button:active
     box-shadow: 0 0.1rem rgba(255,255,255,0.65);
 }
 
-.twitter-button:hover
+.tele-button:hover
 {
-    color: #38a1f3;
+    color: #229ED9;
 }
 
 .fa-twitter

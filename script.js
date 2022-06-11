@@ -88,14 +88,14 @@ ayahText.textContent =
   link = url.href;
   console.log(link)
   complete();
-
- 
+  url.searchParams.delete("v") 
 }
 
 
 function telegram() {
   const teleurl = `https://t.me/share/url?url=${link}&text=${"Take a minute to read this :)"}`;
   window.open(teleurl, "_blank");
+
 }
 
 //Eventlistner
