@@ -94,7 +94,7 @@ ayahText.textContent =
 
 
 function telegram() {
-  const teleurl = `https://t.me/share/url?url=${link}&text=${"Take a minuite to read this :)"}`;
+  const teleurl = `https://t.me/share/url?url=${link}&text=${"Take a minute to read this :)"}`;
   window.open(teleurl, "_blank");
 }
 
