@@ -5,6 +5,17 @@ const ayahText = document.getElementById("ayah");
 const teleBtn = document.getElementById("tele");
 const newQuoteBtn = document.getElementById("new-quote");
 const loader = document.getElementById("loader");
+const splash = document.querySelector('.splash')
+
+
+document.addEventListener('DOMContentLoaded',(e)=>
+{
+  setTimeout(() => {
+    splash.classList.add('display-none');  
+  }, 2000);
+  
+})
+
 
 
 let apiQuote = [];
@@ -98,10 +109,15 @@ function telegram() {
 
 }
 
+function duasearch() {
+  window.location.href = "../dua/duafind.html";
+}
+
 //Eventlistner
 
 newQuoteBtn.addEventListener("click", newQuote);
 teleBtn.addEventListener("click", telegram);
+
 
 newQuote();
 
